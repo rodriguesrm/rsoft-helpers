@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using Xunit;
+﻿using Xunit;
 using ht = RR.Helpers.Tools.Email;
 
 namespace RR.Helpers.Test.ToolTests
@@ -21,10 +20,7 @@ namespace RR.Helpers.Test.ToolTests
         [InlineData("john.diggle@arrowverse", "john.diggle")]
         [InlineData("john.diggle@arrowverse.tv", "john.diggle")]
         public void ExtractLoginTest(string emailAddress, string check)
-        {
-            ht.Login(emailAddress).Equals(check).Should().BeTrue();
-            true.Should().BeTrue();
-        }
+            => Assert.Equal(check, ht.Login(emailAddress));
 
         /// <summary>
         /// Teste de extração de dominio do e-mail
@@ -36,10 +32,7 @@ namespace RR.Helpers.Test.ToolTests
         [InlineData("john.diggle@arrowverse", "arrowverse")]
         [InlineData("john.diggle@arrowverse.tv", "arrowverse.tv")]
         public void ExtractDomainTest(string emailAddress, string check)
-        {
-            ht.Domain(emailAddress).Equals(check).Should().BeTrue();
-            true.Should().BeTrue();
-        }
+            => Assert.Equal(check, ht.Domain(emailAddress));
 
     }
 

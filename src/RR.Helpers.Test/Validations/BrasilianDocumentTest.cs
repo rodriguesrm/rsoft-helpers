@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using Xunit;
+﻿using Xunit;
 using System.Collections.Generic;
 using vbd = RR.Helpers.Validations.BrasilianDocument;
 
@@ -132,8 +131,8 @@ namespace RR.Helpers.Test.Validations
         [Fact]
         public void StaticMethodTest()
         {
-            CpfFaker().Should().NotBeNull();
-            CnpjFaker().Should().NotBeNull();
+            Assert.NotNull(CpfFaker());
+            Assert.NotNull(CnpjFaker());
         }
 
         /// <summary>
@@ -144,7 +143,7 @@ namespace RR.Helpers.Test.Validations
         [Theory]
         [MemberData(nameof(CpfFaker))]
         public void CpfValidationTest(string cpf, bool isSucess)
-            => vbd.CheckCpf(cpf).Should().Be(isSucess);
+            => Assert.Equal(isSucess, vbd.CheckCpf(cpf));
 
         /// <summary>
         /// Test fail validate Cnpj
@@ -154,7 +153,7 @@ namespace RR.Helpers.Test.Validations
         [Theory]
         [MemberData(nameof(CnpjFaker))]
         public void CnpjValidationTest(string cnpj, bool isSucess)
-            => vbd.CheckCnpj(cnpj).Should().Be(isSucess);
+            => Assert.Equal(isSucess, vbd.CheckCnpj(cnpj));
 
         /// <summary>
         /// Check brasilian document test
@@ -166,7 +165,7 @@ namespace RR.Helpers.Test.Validations
         [InlineData("21580534000104", true)]
         [InlineData("123456", false)]
         public void CheckBrasilianDocument(string doc, bool isSucess)
-            => vbd.CheckDocument(doc).Should().Be(isSucess);
+            => Assert.Equal(isSucess, vbd.CheckDocument(doc));
 
         #endregion
 
