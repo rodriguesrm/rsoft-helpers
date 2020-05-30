@@ -127,6 +127,16 @@ namespace RR.Helpers.Test.Validations
         #region Tests
 
         /// <summary>
+        /// This static method test
+        /// </summary>
+        [Fact]
+        public void StaticMethodTest()
+        {
+            CpfFaker().Should().NotBeNull();
+            CnpjFaker().Should().NotBeNull();
+        }
+
+        /// <summary>
         /// Test fail validate Cpf
         /// </summary>
         /// <param name="cpf">Cpf number</param>

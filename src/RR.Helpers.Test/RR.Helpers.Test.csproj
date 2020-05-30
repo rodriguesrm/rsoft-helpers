@@ -20,4 +20,8 @@
     <ProjectReference Include="..\RR.Helpers\RR.Helpers.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ModelTests\" />
+  </ItemGroup>
+
 </Project>

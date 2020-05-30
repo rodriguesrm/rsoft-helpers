@@ -62,7 +62,7 @@ namespace RR.Helpers.Validations
         }
 
         /// <summary>
-        /// Cnpj validation documento
+        /// Cnpj validation document
         /// </summary>
         /// <param name="cpf">cnpjdocument number (only numbers, no mask)</param>
         public static bool CheckCnpj(string cnpj)
