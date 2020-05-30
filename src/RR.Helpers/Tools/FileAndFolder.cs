@@ -35,7 +35,7 @@ namespace RR.Helpers.Tools
 
             fullPath = fullPath.Replace("/", "\\");
 
-            List<string> pathList = fullPath.Split('\\').ToList();
+            IList<string> pathList = fullPath.Split('\\').ToList();
 
             string result = string.Empty;
 
