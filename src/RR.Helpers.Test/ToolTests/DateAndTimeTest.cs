@@ -1,8 +1,6 @@
-﻿using FluentAssertions;
-using Xunit;
+﻿using Xunit;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using dt = RR.Helpers.Tools.DateAndTime;
 using RR.Helpers.Models;
 
@@ -80,8 +78,8 @@ namespace RR.Helpers.Test.ToolTests
         [Fact]
         public void StaticMethodsTest()
         {
-            DateForAgeGenerator().Should().NotBeNull();
-            DateGenerator().Should().NotBeNull();
+            Assert.NotNull(DateForAgeGenerator());
+            Assert.NotNull(DateGenerator());
         }
 
         /// <summary>
@@ -90,7 +88,7 @@ namespace RR.Helpers.Test.ToolTests
         [Theory]
         [MemberData(nameof(DateGenerator))]
         public void LastDayInMonthTest(DateTime date, int checkDay, bool checkResult)
-            => dt.LastDayInMonth(date).Equals(checkDay).Should().Be(checkResult);
+            => Assert.Equal(checkResult, dt.LastDayInMonth(date).Equals(checkDay));
 
         /// <summary>
         /// Age test in specific date
@@ -102,9 +100,9 @@ namespace RR.Helpers.Test.ToolTests
 
             AgeResult age = dt.Age(bornDate, finalDate);
 
-            age.Years.Equals(years).Should().BeTrue();
-            age.Months.Equals(months).Should().BeTrue();
-            age.Days.Equals(days).Should().BeTrue();
+            Assert.Equal(years, age.Years);
+            Assert.Equal(months, age.Months);
+            Assert.Equal(days, age.Days);
 
         }
 
@@ -114,12 +112,15 @@ namespace RR.Helpers.Test.ToolTests
         [Fact]
         public void AgeTestNow()
         {
+
             DateTime bornDate = new DateTime(1976, 11, 13);
             AgeResult check = dt.Age(bornDate, DateTime.Now.Date);
             AgeResult age = dt.Age(bornDate);
-            age.Years.Should().Be(check.Years);
-            age.Months.Should().Be(check.Months);
-            age.Days.Should().Be(check.Days);
+
+            Assert.Equal(check.Years, age.Years);
+            Assert.Equal(check.Months, age.Months);
+            Assert.Equal(check.Days, age.Days);
+
         }
 
         #endregion

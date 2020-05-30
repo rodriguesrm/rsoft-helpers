@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Text;
 using mt = RR.Helpers.Security.MD5;
 using Xunit;
-using FluentAssertions;
 using System.Linq;
 
 namespace RR.Helpers.Test.SecurityTests
@@ -23,7 +21,7 @@ namespace RR.Helpers.Test.SecurityTests
 
             byte[] byteResult = mt.HashMD5("a2b2c3");
 
-            byteCheck.SequenceEqual(byteResult).Should().BeTrue();
+            Assert.True(byteCheck.SequenceEqual(byteResult));
 
         }
 
@@ -35,9 +33,9 @@ namespace RR.Helpers.Test.SecurityTests
             byte[] byteCheck = new byte[] { 159, 40, 18, 20, 204, 202, 53, 123, 235, 30, 241, 180, 107, 11, 64, 18 };
 
             byte[] byteResult = mt.HashMD5("a2b2c3", out string result);
-            
-            result.Should().Be(stringCheck);
-            byteCheck.SequenceEqual(byteResult).Should().BeTrue();
+
+            Assert.Equal(stringCheck, result);
+            Assert.True(byteCheck.SequenceEqual(byteResult));
 
         }
 
@@ -49,7 +47,7 @@ namespace RR.Helpers.Test.SecurityTests
             byte[] byteArray = new byte[] { 159, 40, 18, 20, 204, 202, 53, 123, 235, 30, 241, 180, 107, 11, 64, 18 };
 
             string result = mt.ByteArrayToString(byteArray);
-            result.Should().Be(stringCheck);
+            Assert.Equal(stringCheck, result);
 
         }
 
@@ -61,7 +59,7 @@ namespace RR.Helpers.Test.SecurityTests
             byte[] byteCheck = new byte[] { 159, 40, 18, 20, 204, 202, 53, 123, 235, 30, 241, 180, 107, 11, 64, 18 };
 
             byte[] result = mt.StringToByteArray(hex);
-            result.SequenceEqual(byteCheck).Should().BeTrue();
+            Assert.True(result.SequenceEqual(byteCheck));
 
         }
 
