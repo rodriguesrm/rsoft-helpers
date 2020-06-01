@@ -9,11 +9,16 @@
     <Description>Helpers to assist in repetitive day-to-day operations for developers</Description>
     <PackageIcon>rsoft.helpers.32x32.png</PackageIcon>
     <RepositoryUrl>https://github.com/rodriguesrm/rsoft-helpers</RepositoryUrl>
-    <PackageLicenseExpression>https://licenses.nuget.org/MIT</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <PackageTags>cpf cnpj helpers rsoft age</PackageTags>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\docs\license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="rsoft.helpers.32x32.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
