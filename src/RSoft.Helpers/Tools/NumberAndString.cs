@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace RR.Helpers.Tools
+namespace RSoft.Helpers.Tools
 {
 
     /// <summary>

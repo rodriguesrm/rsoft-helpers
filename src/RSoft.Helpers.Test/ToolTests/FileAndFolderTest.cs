@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using RR.Helpers.Tools;
+using RSoft.Helpers.Tools;
 
-namespace RR.Helpers.Test.ToolTests
+namespace RSoft.Helpers.Test.ToolTests
 {
 
     /// <summary>

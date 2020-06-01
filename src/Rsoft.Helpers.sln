@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Packages", "0-Packages", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Tests", "1-Tests", "{7CF9DED8-CD10-4F51-AA0B-3FC57C07EFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RR.Helpers", "RR.Helpers\RR.Helpers.csproj", "{3BE60223-50D3-40F3-8A9B-27F945ADB281}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSoft.Helpers", "RSoft.Helpers\RSoft.Helpers.csproj", "{3BE60223-50D3-40F3-8A9B-27F945ADB281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RR.Helpers.Test", "RR.Helpers.Test\RR.Helpers.Test.csproj", "{2B8FCEF9-31D3-46CF-BBAC-A29B9D599C82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSoft.Helpers.Test", "RSoft.Helpers.Test\RSoft.Helpers.Test.csproj", "{2B8FCEF9-31D3-46CF-BBAC-A29B9D599C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

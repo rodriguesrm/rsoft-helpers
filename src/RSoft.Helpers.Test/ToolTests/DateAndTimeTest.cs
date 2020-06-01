@@ -1,10 +1,10 @@
 ﻿using Xunit;
 using System;
 using System.Collections.Generic;
-using dt = RR.Helpers.Tools.DateAndTime;
-using RR.Helpers.Models;
+using dt = RSoft.Helpers.Tools.DateAndTime;
+using RSoft.Helpers.Models;
 
-namespace RR.Helpers.Test.ToolTests
+namespace RSoft.Helpers.Test.ToolTests
 {
 
     /// <summary>

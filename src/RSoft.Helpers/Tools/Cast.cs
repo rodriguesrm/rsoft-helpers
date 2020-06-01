@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace RR.Helpers.Tools
+namespace RSoft.Helpers.Tools
 {
 
     /// <summary>

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace RR.Helpers.Validations
+namespace RSoft.Helpers.Validations
 {
 
     /// <summary>

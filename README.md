@@ -1,4 +1,4 @@
-# RR.Helpers
+# Rsoft.Helpers
 Helpers to assist in repetitive day-to-day operations for developers
 
 ## Features

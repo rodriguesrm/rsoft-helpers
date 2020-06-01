@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using ht = RR.Helpers.Tools.Email;
+using ht = RSoft.Helpers.Tools.Email;
 
-namespace RR.Helpers.Test.ToolTests
+namespace RSoft.Helpers.Test.ToolTests
 {
 
     /// <summary>

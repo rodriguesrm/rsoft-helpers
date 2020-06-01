@@ -1,14 +1,14 @@
 ﻿using System;
-using mt = RR.Helpers.Security.MD5;
+using mt = RSoft.Helpers.Security.MD5;
 using Xunit;
 using System.Linq;
 
-namespace RR.Helpers.Test.SecurityTests
+namespace RSoft.Helpers.Test.SecurityTests
 {
 
 
     /// <summary>
-    /// RR.Helpers.Security method tests
+    /// RSoft.Helpers.Security method tests
     /// </summary>
     public class MD5Test
     {

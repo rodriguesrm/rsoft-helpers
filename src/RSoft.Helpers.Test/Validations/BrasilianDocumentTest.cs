@@ -1,8 +1,8 @@
 ﻿using Xunit;
 using System.Collections.Generic;
-using vbd = RR.Helpers.Validations.BrasilianDocument;
+using vbd = RSoft.Helpers.Validations.BrasilianDocument;
 
-namespace RR.Helpers.Test.Validations
+namespace RSoft.Helpers.Test.Validations
 {
 
     /// <summary>
