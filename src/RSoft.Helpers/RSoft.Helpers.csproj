@@ -3,6 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ApplicationIcon>rsoft.helpers.32x32.ico</ApplicationIcon>
+    <Authors>Rodrigo Rodrigues</Authors>
+    <Company>Rodrigo Rodrigues</Company>
+    <Description>Helpers to assist in repetitive day-to-day operations for developers</Description>
+    <PackageIcon>rsoft.helpers.32x32.png</PackageIcon>
+    <RepositoryUrl>https://github.com/rodriguesrm/rsoft-helpers</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="rsoft.helpers.32x32.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

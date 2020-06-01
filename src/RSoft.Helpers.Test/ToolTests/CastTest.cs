@@ -12,12 +12,6 @@ namespace RSoft.Helpers.Test.ToolTests
     public class CastTest
     {
 
-        #region Static Methods
-
-        //TODO: Implement generator to tests
-
-        #endregion
-
         #region Tests
 
         /// <summary>
