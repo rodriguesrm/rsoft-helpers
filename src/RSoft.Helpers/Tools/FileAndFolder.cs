@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace RSoft.Helpers.Tools
 {
@@ -44,6 +46,32 @@ namespace RSoft.Helpers.Tools
                     result = "\\\\" + pathList[2] + "\\" + pathList[3];
 
             return result;
+
+        }
+
+        /// <summary>
+        /// Save a file on disk
+        /// </summary>
+        /// <param name="fullName">Fullname file</param>
+        /// <param name="file">Byte-array of file</param>
+        /// <param name="cancellationToken">Cancellation token object</param>
+        public static async Task SaveFileAsync(string fullName, byte[] file, CancellationToken cancellationToken = default)
+            => await SaveFileAsync(fullName, file, true, cancellationToken);
+
+        /// <summary>
+        /// Gravar um arquivo no disco
+        /// </summary>
+        /// <param name="fullName">Fullname file</param>
+        /// <param name="file">Byte-array of file</param>
+        /// <param name="overwrite">Indicates whether the file should be overwritten if exists</param>
+        /// <param name="cancellationToken">Cancellation token object</param>
+        public static async Task SaveFileAsync(string fullName, byte[] file, bool overwrite, CancellationToken cancellationToken = default)
+        {
+
+            if (File.Exists(fullName) && !overwrite)
+                throw new InvalidOperationException($"{fullName} file already exists");
+
+            await File.WriteAllBytesAsync(fullName, file, cancellationToken);
 
         }
 
