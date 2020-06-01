@@ -5,10 +5,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon>rsoft.helpers.32x32.ico</ApplicationIcon>
     <Authors>Rodrigo Rodrigues</Authors>
-    <Company>Rodrigo Rodrigues</Company>
+    <Company>Rsoft</Company>
     <Description>Helpers to assist in repetitive day-to-day operations for developers</Description>
     <PackageIcon>rsoft.helpers.32x32.png</PackageIcon>
     <RepositoryUrl>https://github.com/rodriguesrm/rsoft-helpers</RepositoryUrl>
+    <PackageLicenseExpression>https://licenses.nuget.org/MIT</PackageLicenseExpression>
+    <PackageTags>cpf cnpj helpers rsoft age</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
