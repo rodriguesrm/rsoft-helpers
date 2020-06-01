@@ -1,4 +1,4 @@
-﻿namespace RR.Helpers.Models
+﻿namespace RSoft.Helpers.Models
 {
 
     /// <summary>

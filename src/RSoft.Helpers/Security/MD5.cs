@@ -3,7 +3,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace RR.Helpers.Security
+namespace RSoft.Helpers.Security
 {
 
     /// <summary>

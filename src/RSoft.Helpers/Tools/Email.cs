@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace RR.Helpers.Tools
+namespace RSoft.Helpers.Tools
 {
 
     /// <summary>

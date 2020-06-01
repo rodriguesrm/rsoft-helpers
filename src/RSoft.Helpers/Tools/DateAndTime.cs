@@ -1,7 +1,7 @@
-﻿using RR.Helpers.Models;
+﻿using RSoft.Helpers.Models;
 using System;
 
-namespace RR.Helpers.Tools
+namespace RSoft.Helpers.Tools
 {
 
     /// <summary>

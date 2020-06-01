@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Globalization;
 using Xunit;
-using hlp = RR.Helpers.Tools;
+using hlp = RSoft.Helpers.Tools;
 
-namespace RR.Helpers.Test.ToolTests
+namespace RSoft.Helpers.Test.ToolTests
 {
 
     /// <summary>
