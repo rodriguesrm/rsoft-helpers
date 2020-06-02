@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build src/Rsoft.Helpers.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test src/Rsoft.Helpers.sln --no-restore --settings "%cd%\CodeCoverage.runsettings" --verbosity normal
+      run: dotnet test src/Rsoft.Helpers.sln --no-restore --settings "src/RSoft.Helpers.Test/CodeCoverage.runsettings" --verbosity normal
