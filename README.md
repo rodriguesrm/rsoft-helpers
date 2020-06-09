@@ -1,6 +1,8 @@
 # Rsoft.Helpers
 Helpers to assist in repetitive day-to-day operations for developers
 
+![.RSoft CI](https://github.com/rodriguesrm/rsoft-helpers/workflows/.RSoft%20CI/badge.svg)
+
 ## Features
 
 * Get properties by reflection
