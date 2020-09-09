@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace RSoft.Helpers.Extesions
+namespace RSoft.Helpers.Extensions
 {
 
     /// <summary>

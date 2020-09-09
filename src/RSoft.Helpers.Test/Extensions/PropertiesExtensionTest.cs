@@ -1,9 +1,6 @@
-﻿using RSoft.Helpers.Extesions;
+﻿using RSoft.Helpers.Extensions;
 using RSoft.Helpers.Models;
 using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
 using Xunit;
 
 namespace RSoft.Helpers.Test.Extensions
@@ -12,7 +9,7 @@ namespace RSoft.Helpers.Test.Extensions
     /// <summary>
     /// Reflection helpers test
     /// </summary>
-    public class PropertiesTest
+    public class PropertiesExtensionTest
     {
 
         private AgeResult _age = new AgeResult(1976, 11, 13);
