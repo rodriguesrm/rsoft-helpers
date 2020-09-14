@@ -12,9 +12,19 @@
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageTags>cpf cnpj helpers rsoft age validations conversions cast</PackageTags>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
-    <AssemblyVersion>1.3.0.0</AssemblyVersion>
-    <FileVersion>1.3.0.0</FileVersion>
-    <Version>1.3.0</Version>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <FileVersion>1.3.1.0</FileVersion>
+    <Version>1.3.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>RSoft.Helpers.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netstandard2.1\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>RSoft.Helpers.xml</DocumentationFile>
+    <OutputPath>bin\Release\netstandard2.1\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +35,12 @@
     <None Include="rsoft.helpers.32x32.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="RSoft.Helpers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -246,3 +246,4 @@ ModelManifest.xml
 
 # Files project to ignore
 TestResults/
+/src/RSoft.Helpers/RSoft.Helpers.xml
