@@ -20,7 +20,7 @@ namespace RSoft.Helpers.Test.Extensions
         [Fact]
         public void GetPropValueTest()
         {
-            object years = Properties.GetPropValue(_age, "Years");
+            object years = PropertiesExtension.GetPropValue(_age, "Years");
             Assert.NotNull(years);
         }
 
@@ -30,7 +30,7 @@ namespace RSoft.Helpers.Test.Extensions
         [Fact]
         public void GetPropValueSpecificTypeTest()
         {
-            int years = Properties.GetPropValue<int>(_age, "Years");
+            int years = PropertiesExtension.GetPropValue<int>(_age, "Years");
             Assert.Equal(_age.Years, years);
         }
 
@@ -40,7 +40,7 @@ namespace RSoft.Helpers.Test.Extensions
         [Fact]
         public void GetPropValueSpecificTypeThrowExceptionTest()
         {
-            void action() => Properties.GetPropValue<short>(_age, "Years");
+            void action() => PropertiesExtension.GetPropValue<short>(_age, "Years");
             InvalidCastException ex = Assert.Throws<InvalidCastException>(action);
             Assert.IsType<InvalidCastException>(ex);
         }
@@ -50,13 +50,13 @@ namespace RSoft.Helpers.Test.Extensions
         {
             object checkObj;
 
-            checkObj = Properties.GetPropValue(null, "PropertyNotExist");
+            checkObj = PropertiesExtension.GetPropValue(null, "PropertyNotExist");
             Assert.Null(checkObj);
 
-            checkObj = Properties.GetPropValue(_age, string.Empty);
+            checkObj = PropertiesExtension.GetPropValue(_age, string.Empty);
             Assert.Null(checkObj);
 
-            int checkInt = Properties.GetPropValue<int>(_age, "PropertyNotExist");
+            int checkInt = PropertiesExtension.GetPropValue<int>(_age, "PropertyNotExist");
             Assert.Equal(0, checkInt);
         }
 

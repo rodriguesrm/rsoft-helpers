@@ -7,7 +7,7 @@ namespace RSoft.Helpers.Extensions
     /// <summary>
     /// Provides properties method helpers
     /// </summary>
-    public static class Properties
+    public static class PropertiesExtension
     {
 
         /// <summary>

@@ -28,3 +28,9 @@ Helpers to assist in repetitive day-to-day operations for developers
     * CreditCard
 		* Check
 		* IsBrand
+* Enum Extensions
+    * Get Description
+    * Get Role (if contains RSoft.Helpers.Attribute.RoleNameAttribute)
+* JSon Extensions
+    * JsonSerialize
+    * JsonDeserialize

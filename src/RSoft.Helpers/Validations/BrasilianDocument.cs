@@ -62,7 +62,7 @@ namespace RSoft.Helpers.Validations
         /// <summary>
         /// Cnpj validation document
         /// </summary>
-        /// <param name="cpf">cnpjdocument number (only numbers, no mask)</param>
+        /// <param name="cnpj">cnpjdocument number (only numbers, no mask)</param>
         public static bool CheckCnpj(string cnpj)
         {
 
@@ -79,7 +79,6 @@ namespace RSoft.Helpers.Validations
                 return false;
 
             int dv;
-            //string[] factor = { "678923456789", "5678923456789" };
             string[] factor = { "543298765432", "6543298765432" };
 
             // DV1 calculating

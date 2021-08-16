@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Packages", "0-Packages", "{5CBF1307-40B3-4566-BFDA-F1648C718BC8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Packages", "1-Packages", "{5CBF1307-40B3-4566-BFDA-F1648C718BC8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Tests", "1-Tests", "{7CF9DED8-CD10-4F51-AA0B-3FC57C07EFCC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Tests", "2-Tests", "{7CF9DED8-CD10-4F51-AA0B-3FC57C07EFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSoft.Helpers", "RSoft.Helpers\RSoft.Helpers.csproj", "{3BE60223-50D3-40F3-8A9B-27F945ADB281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSoft.Helpers", "RSoft.Helpers\RSoft.Helpers.csproj", "{3BE60223-50D3-40F3-8A9B-27F945ADB281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSoft.Helpers.Test", "RSoft.Helpers.Test\RSoft.Helpers.Test.csproj", "{2B8FCEF9-31D3-46CF-BBAC-A29B9D599C82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSoft.Helpers.Test", "RSoft.Helpers.Test\RSoft.Helpers.Test.csproj", "{2B8FCEF9-31D3-46CF-BBAC-A29B9D599C82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Docs", "0-Docs", "{530DE84B-DB19-48A2-AD49-C0CF4AC7141B}"
+	ProjectSection(SolutionItems) = preProject
+		..\docs\license.txt = ..\docs\license.txt
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
